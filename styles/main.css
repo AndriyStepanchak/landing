@@ -1,12 +1,12 @@
 html {
   margin: 0;
   padding: 0;
-  font-size: 62.5%;
+  font-size: 16px;
 }
 
-@media (max-width: 1370px) {
+@media (max-width: 1440px) {
   html {
-    font-size: 44%;
+    font-size: 15px;
   }
 }
 
@@ -18,7 +18,7 @@ html {
 
 @font-face {
   font-family: 'Montserrat';
-  src: url("/fonts/Montserrat-Regular.woff2") format("woff2"), url("/fonts/Montserrat-Regular.woff") format("woff");
+  src: url("Montserrat-Regular.woff2") format("woff2"), url("Montserrat-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -26,7 +26,7 @@ html {
 
 @font-face {
   font-family: 'Sukhumvit Set';
-  src: url("/fonts/SukhumvitSet-Text.woff2") format("woff2"), url("/fonts/SukhumvitSet-Text.woff") format("woff");
+  src: url("SukhumvitSet-Text.woff2") format("woff2"), url("SukhumvitSet-Text.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -34,7 +34,7 @@ html {
 
 @font-face {
   font-family: 'Saudagar';
-  src: url("/fonts/Saudagar.woff2") format("woff2"), url("/fonts/Saudagar.woff") format("woff");
+  src: url("Saudagar.woff2") format("woff2"), url("Saudagar.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -151,7 +151,7 @@ button:hover {
   color: white;
   opacity: 0.06;
   text-transform: uppercase;
-  width: 98vw;
+  width: 100vw;
 }
 
 @media (max-width: 720px) {
