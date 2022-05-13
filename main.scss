@@ -1,0 +1,103 @@
+@import "variables";
+@import "components";
+@import "fonts";
+
+body {
+    background: #1A1A1A;
+}
+.salon {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.72))), url(logo.svg);
+    background-size: 192rem;
+    background-repeat: no-repeat;
+    color:white;
+    display: grid;
+    grid-template-rows: 25rem 48rem 15rem 30rem;
+}
+.menu {
+    display: grid;
+    grid-template-columns:2fr 1fr;
+    padding: 8rem 11.5rem;
+    align-items: center;
+    a {
+        color:white;
+        text-decoration: none;
+        padding: 0 1rem ;
+    }
+}
+.left-side {
+    @include montserratNormal(400, 3.1rem);
+    letter-spacing: 0.17em;
+}
+.right-side {
+    @include sukhumvitNormal(500, 1.8rem);
+    display: grid;
+    justify-items: end;
+    grid-template-columns:repeat(3, 1fr);
+    div {
+        display: flex;
+        width: 16rem;
+        &:hover{
+            border-bottom: 0.1rem solid white;
+            opacity: 0.8;
+        }
+    }
+    img {
+        height:2.5rem;
+    }
+}
+.center {
+    @include saudagarNormal(400, 27.5rem);
+    @include centerUpper(26rem);
+    align-self: end;
+}
+.center-small {
+    @include saudagarNormal(300, 3.2rem);
+    @include centerUpper(4.2rem);
+}
+button {
+    width: 28.2rem;
+    height: 5.9rem;
+    background: #DCAC9B;
+    border-radius: 0.2rem;
+    border: none;
+    cursor: pointer;
+    @include sukhumvitNormal(700, 1.8rem);
+    &:hover{
+        border: 0.1rem solid white;
+        opacity: 0.8;
+    }
+}
+.coming{
+    @include saudagarNormal(400, 15.6vw);
+    color: white;
+    opacity: 0.06;
+    text-transform: uppercase;
+    width: 98vw;
+}
+
+@media (max-width: 720px) {
+    .salon {
+        grid-template-rows: 15rem 45rem 15rem 22rem;
+        background-size: 155rem;
+    }
+    .menu {
+        padding: 1rem 3rem;
+    }
+} 
+@media (max-width: 410px) {
+    .menu,.right-side,.left-side {
+        display: block;
+    }
+    .right-side div{
+        padding:1.5rem;
+    }
+    .center {
+        font-size: 16rem;
+        line-height: 22rem;
+    }
+    .center-small {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+} 
+
