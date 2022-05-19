@@ -370,7 +370,7 @@ button:hover {
 }
 
 .ellipse-34, .ellipse-35 {
-  content: url(/image/Ellipse-34.svg);
+  content: url(../image/Ellipse-34.svg);
   width: 32rem;
   height: 32rem;
   text-align: center;
@@ -378,7 +378,7 @@ button:hover {
 }
 
 .ellipse-35 {
-  content: url(/image/Ellipse-35.svg);
+  content: url(../image/Ellipse-35.svg);
 }
 
 .coming-soon-on h2 {
