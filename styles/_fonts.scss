@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Montserrat';
-    src: url('Montserrat-Regular.woff2') format('woff2'),
-        url('Montserrat-Regular.woff') format('woff');
+    src: url('/fonts/Montserrat-Regular.woff2') format('woff2'),
+        url('/fonts/Montserrat-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -9,16 +9,16 @@
 }
 @font-face {
     font-family: 'Sukhumvit Set';
-    src: url('SukhumvitSet-Text.woff2') format('woff2'),
-        url('SukhumvitSet-Text.woff') format('woff');
+    src: url('/fonts/SukhumvitSet-Text.woff2') format('woff2'),
+        url('/fonts/SukhumvitSet-Text.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'Saudagar';
-    src: url('Saudagar.woff2') format('woff2'),
-        url('Saudagar.woff') format('woff');
+    src: url('/fonts/Saudagar.woff2') format('woff2'),
+        url('/fonts/Saudagar.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;

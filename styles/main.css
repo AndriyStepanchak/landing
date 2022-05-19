@@ -1,24 +1,6 @@
-html {
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
-}
-
-@media (max-width: 1440px) {
-  html {
-    font-size: 15px;
-  }
-}
-
-@media (max-width: 980px) {
-  html {
-    font-size: 32%;
-  }
-}
-
 @font-face {
   font-family: 'Montserrat';
-  src: url("Montserrat-Regular.woff2") format("woff2"), url("Montserrat-Regular.woff") format("woff");
+  src: url("/fonts/Montserrat-Regular.woff2") format("woff2"), url("/fonts/Montserrat-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -26,7 +8,7 @@ html {
 
 @font-face {
   font-family: 'Sukhumvit Set';
-  src: url("SukhumvitSet-Text.woff2") format("woff2"), url("SukhumvitSet-Text.woff") format("woff");
+  src: url("/fonts/SukhumvitSet-Text.woff2") format("woff2"), url("/fonts/SukhumvitSet-Text.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -34,7 +16,36 @@ html {
 
 @font-face {
   font-family: 'Saudagar';
-  src: url("Saudagar.woff2") format("woff2"), url("Saudagar.woff") format("woff");
+  src: url("/fonts/Saudagar.woff2") format("woff2"), url("/fonts/Saudagar.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("/fonts/Montserrat-Regular.woff2") format("woff2"), url("/fonts/Montserrat-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sukhumvit Set';
+  src: url("/fonts/SukhumvitSet-Text.woff2") format("woff2"), url("/fonts/SukhumvitSet-Text.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Saudagar';
+  src: url("/fonts/Saudagar.woff2") format("woff2"), url("/fonts/Saudagar.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -42,59 +53,128 @@ html {
 
 body {
   background: #1A1A1A;
+  max-width: 120rem;
 }
 
-.salon {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.72))), url(logo.svg);
-  background-size: 192rem;
-  background-repeat: no-repeat;
-  color: white;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 25rem 48rem 15rem 30rem;
-      grid-template-rows: 25rem 48rem 15rem 30rem;
+h1 {
+  font-family: 'Saudagar';
+  font-weight: 400;
+  font-size: 18rem;
+  line-height: 18rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  opacity: 0.06;
+  margin: 0;
+  white-space: nowrap;
 }
 
-.menu {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 2fr 1fr;
-      grid-template-columns: 2fr 1fr;
-  padding: 8rem 11.5rem;
+h2 {
+  font-family: 'Saudagar';
+  font-weight: 400;
+  font-size: 3.13rem;
+  line-height: 4.06rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: 'Sukhumvit Set';
+  font-weight: 300;
+  font-size: 1.37rem;
+  line-height: 2,37rem;
+  color: rgba(26, 26, 26, 0.8);
+}
+
+h4 {
+  font-family: 'Saudagar';
+  font-weight: 400;
+  font-size: 1.87rem;
+  color: #DCAC9B;
+  margin: 0;
+}
+
+p {
+  font-family: 'Sukhumvit Set';
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 
-.menu a {
-  color: white;
+input {
+  background: #1A1A1A;
+  width: 35rem;
+  border: none;
+  outline: none;
+  opacity: 0.7;
+  border-bottom: 0.1rem solid white;
+  margin-bottom: 3rem;
+  padding-bottom: 1rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: #8E8E8E;
+}
+
+.salon {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.72))), url(/image/logo.svg);
+  background-size: 120rem;
+  background-repeat: no-repeat;
+  color: #FFFFFF;
   text-decoration: none;
-  padding: 0 1rem;
+  height: 75rem;
+  white-space: nowrap;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5rem 7.18rem;
 }
 
 .left-side {
   font-family: 'Montserrat';
   font-weight: 400;
-  font-size: 3.1rem;
+  font-size: 2rem;
   letter-spacing: 0.17em;
 }
 
 .right-side {
   font-family: 'Sukhumvit Set';
-  font-weight: 500;
-  font-size: 1.8rem;
-  display: -ms-grid;
-  display: grid;
-  justify-items: end;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-}
-
-.right-side div {
+  font-weight: 100;
+  font-size: 1.125rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 16rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.right-side div {
+  padding-right: 3rem;
 }
 
 .right-side div:hover {
@@ -103,40 +183,41 @@ body {
 }
 
 .right-side img {
-  height: 2.5rem;
+  height: 1.3rem;
+  padding-right: 0.5rem;
 }
 
 .center {
   font-family: 'Saudagar';
   font-weight: 400;
-  font-size: 27.5rem;
+  font-size: 17.18rem;
   text-align: center;
   text-transform: uppercase;
-  line-height: 26rem;
-  -ms-flex-item-align: end;
-      -ms-grid-row-align: end;
-      align-self: end;
+  line-height: 19rem;
+  margin-top: 12rem;
 }
 
 .center-small {
   font-family: 'Saudagar';
   font-weight: 300;
-  font-size: 3.2rem;
+  font-size: 2rem;
   text-align: center;
   text-transform: uppercase;
-  line-height: 4.2rem;
+  line-height: 2.62rem;
+  margin-bottom: 3.8rem;
 }
 
 button {
-  width: 28.2rem;
-  height: 5.9rem;
+  width: 17.6rem;
+  height: 3.7rem;
+  text-align: center;
   background: #DCAC9B;
   border-radius: 0.2rem;
   border: none;
   cursor: pointer;
   font-family: 'Sukhumvit Set';
   font-weight: 700;
-  font-size: 1.8rem;
+  font-size: 1.12rem;
 }
 
 button:hover {
@@ -145,40 +226,383 @@ button:hover {
 }
 
 .coming {
-  font-family: 'Saudagar';
-  font-weight: 400;
-  font-size: 15.6vw;
+  height: 80rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: white;
-  opacity: 0.06;
-  text-transform: uppercase;
-  width: 100vw;
 }
 
-@media (max-width: 720px) {
-  .salon {
-    -ms-grid-rows: 15rem 45rem 15rem 22rem;
-        grid-template-rows: 15rem 45rem 15rem 22rem;
-    background-size: 155rem;
+.coming h2 {
+  width: 45rem;
+  height: 14.75rem;
+  text-align: center;
+}
+
+.coming h3 {
+  width: 54rem;
+  height: 8.12rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.coming img {
+  width: 95rem;
+  height: 47.5rem;
+  text-align: center;
+  margin-top: 14.87rem;
+}
+
+.own-shedule, .lashes, .skills-sharper-03 {
+  padding-left: 13rem;
+}
+
+.own-shedule h2, .lashes h2, .skills-sharper-03 h2 {
+  width: 24.37rem;
+  height: 8.12rem;
+  text-align: start;
+  margin: 0;
+}
+
+.own-shedule h3, .lashes h3, .skills-sharper-03 h3 {
+  width: 30.25rem;
+  height: 6rem;
+  text-align: start;
+}
+
+.shedule {
+  background: white;
+  height: 97rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 13.12rem;
+}
+
+.shedule img {
+  width: 40.62rem;
+  height: 20.62rem;
+  text-align: center;
+}
+
+.good-money {
+  height: 59.37rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+}
+
+.good-money .lashes {
+  padding-right: 18rem;
+}
+
+.good-money .lashes h3 {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.good-money img {
+  width: 36.25rem;
+  height: 64.37rem;
+  text-align: center;
+  position: relative;
+  bottom: 2.4rem;
+}
+
+.skills-sharper {
+  background: white;
+  text-align: center;
+}
+
+.skills-sharper-03 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 13rem;
+  text-align: start;
+}
+
+.ellipse {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 4rem 0 13rem 0;
+}
+
+.ellipse img {
+  position: absolute;
+  width: 21.81rem;
+  height: 47.25rem;
+  text-align: center;
+  border: 0.4rem solid black;
+  border-radius: 2rem;
+  -webkit-box-shadow: 0 0.5rem 3rem 1rem rgba(1, 21, 52, 0.16);
+          box-shadow: 0 0.5rem 3rem 1rem rgba(1, 21, 52, 0.16);
+}
+
+.ellipse-34, .ellipse-35 {
+  content: url(/image/Ellipse-34.svg);
+  width: 32rem;
+  height: 32rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.ellipse-35 {
+  content: url(/image/Ellipse-35.svg);
+}
+
+.coming-soon-on h2 {
+  font-family: 'Sukhumvit Set';
+  font-weight: 400;
+  font-size: 1.56rem;
+}
+
+.coming-soon-on button {
+  font-weight: 500;
+  background-color: black;
+  color: white;
+  width: 11.37rem;
+  height: 3.25rem;
+  text-align: center;
+  margin: 0 0.8rem 12rem 0;
+}
+
+.coming-soon-on button img {
+  height: 1.3rem;
+  padding-right: 0.9rem;
+}
+
+.black-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.makeup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  color: white;
+}
+
+.makeup img {
+  width: 62rem;
+  height: 62rem;
+  text-align: center;
+}
+
+.subscribe {
+  padding-left: 12.5rem;
+}
+
+.subscribe button {
+  width: 35rem;
+  margin-top: 2rem;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2.87rem 7.81rem;
+}
+
+.copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.copyright img {
+  width: 0.7rem;
+  height: 0.8rem;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+@media (max-width: 1440px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 6.8px;
+  }
+}
+
+@media (max-width: 425px) {
+  html {
+    font-size: 5px;
   }
   .menu {
-    padding: 1rem 3rem;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .right-side, .left-side {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    font-size: 3rem;
+  }
+  .right-side img, .left-side img {
+    height: 3rem;
+    padding-right: 2rem;
+  }
+  .center-small, h3, button {
+    font-size: 2.5rem;
+  }
+  button, .coming-soon-on button {
+    width: 30rem;
+    height: 7rem;
+    text-align: center;
+  }
+  h1 {
+    font-size: 14rem;
+    line-height: 14rem;
+  }
+  h2, .coming-soon-on h2 {
+    font-size: 3rem;
+    line-height: 5rem;
+  }
+  p, h3 {
+    font-size: 2.5rem;
+    line-height: 4rem;
+  }
+  h4 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  .coming h3 {
+    width: 75rem;
+    height: 15rem;
+    text-align: center;
+  }
+  .coming img {
+    width: 70rem;
+  }
+  .shedule {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .shedule .own-shedule {
+    width: 60rem;
+    padding-bottom: 5rem;
+  }
+  .shedule .own-shedule h4, .shedule .own-shedule h2, .shedule .own-shedule h3 {
+    margin: 0;
+    width: 60rem;
+  }
+  .good-money .lashes, .skills-sharper-03 {
+    padding: 4rem;
+    margin-bottom: 10rem;
+  }
+  .ellipse-34, .ellipse-35 {
+    width: 26rem;
+  }
+  .coming-soon-on button img {
+    height: 3rem;
+  }
+  .makeup img {
+    width: 38rem;
+    height: 38rem;
+    text-align: center;
+  }
+  .copyright img {
+    width: 3rem;
+    height: 3rem;
+    text-align: baseline;
+  }
+  .subscribe {
+    padding-left: 5rem;
+  }
+  input {
+    font-size: 1.8rem;
+    width: 42rem;
   }
 }
 
-@media (max-width: 410px) {
-  .menu, .right-side, .left-side {
-    display: block;
+@media (max-width: 375px) {
+  h1 {
+    font-size: 12rem;
+    line-height: 12rem;
   }
-  .right-side div {
-    padding: 1.5rem;
+  .ellipse-34, .ellipse-35 {
+    width: 22rem;
   }
-  .center {
-    font-size: 16rem;
-    line-height: 22rem;
+  .subscribe {
+    padding-left: 3rem;
   }
-  .center-small {
-    font-size: 2rem;
-    line-height: 3rem;
+  input {
+    font-size: 1.7rem;
+    width: 37rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

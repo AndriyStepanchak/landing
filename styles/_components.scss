@@ -1,23 +1,26 @@
-html {
-    margin: 0;
-    padding: 0;
-    font-size: 16px;
-  }
+@import "fonts";
+@import "variables";
 
+html,body {
+  margin: 0;
+  padding: 0;
+}
 @mixin centerUpper($height) {
-    text-align: center;
-    text-transform: uppercase;
-    line-height: $height;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: $height;
 }
-
-@media (max-width: 1440px) {
-  html {
-    font-size: 15px;
-  }
+@mixin flexCenterJustify($content) {
+  display: flex;
+  align-items: center;
+  justify-content:$content;
 }
-@media (max-width: 980px) {
-  html {
-    font-size: 32%;
-  }
-} 
-
+@mixin widthHeightAlign($width,$height,$align) {
+  width:$width;
+  height:$height;
+  text-align:$align;
+}
+@mixin sizeLheight ($size,$height) {
+  font-size: $size;
+  line-height: $height;
+}
