@@ -338,7 +338,12 @@ button {
         padding-left: 3rem;
     } 
     input{
-        font-size: 1.7rem;
-        width: 37rem;
+        font-size: 1.6rem;
+        width: 33rem;
     }
 } 
+@media (max-width: 320px) {
+    html {
+        font-size: 4px;
+    }
+}
