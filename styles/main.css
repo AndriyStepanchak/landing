@@ -129,7 +129,8 @@ input {
 }
 
 .salon {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.72))), url(/image/logo.svg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.72))), url(logo.svg);
+  background: linear-gradient(rgba(0, 0, 0, 0.72)), url(logo.svg);
   background-size: 120rem;
   background-repeat: no-repeat;
   color: #FFFFFF;
