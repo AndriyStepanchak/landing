@@ -346,4 +346,21 @@ button {
     html {
         font-size: 4px;
     }
+    h1 {
+        @include sizeLheight(11rem,11rem);
+    }
+    .good-money .lashes,.skills-sharper-03  {
+        padding: 1rem;
+    }
+    .ellipse-34, .ellipse-35 {
+        width: 20rem;
+    }
+    .subscribe {
+        padding-left: 3rem;
+    } 
+    input{
+        font-size: 1.4rem;
+        width: 30rem;
+    }
+
 }
