@@ -524,8 +524,8 @@ button:hover {
     text-align: center;
   }
   h1 {
-    font-size: 14rem;
-    line-height: 14rem;
+    font-size: 12rem;
+    line-height: 12rem;
   }
   h2, .coming-soon-on h2 {
     font-size: 3rem;
@@ -566,7 +566,7 @@ button:hover {
     margin-bottom: 10rem;
   }
   .ellipse-34, .ellipse-35 {
-    width: 26rem;
+    width: 23rem;
   }
   .coming-soon-on button img {
     height: 3rem;
@@ -585,8 +585,8 @@ button:hover {
     padding-left: 5rem;
   }
   input {
-    font-size: 1.8rem;
-    width: 42rem;
+    font-size: 1.4rem;
+    width: 33rem;
   }
 }
 

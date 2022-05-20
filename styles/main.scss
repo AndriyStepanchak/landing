@@ -272,7 +272,7 @@ button {
         @include widthHeightAlign(30rem,7rem,center);
     }
     h1 {
-        @include sizeLheight(14rem,14rem);
+        @include sizeLheight(12rem,12rem);
     }
     h2,.coming-soon-on h2 {
         @include sizeLheight(3rem,5rem);
@@ -307,7 +307,7 @@ button {
         margin-bottom: 10rem; 
     }
     .ellipse-34, .ellipse-35 {
-        width: 26rem;
+        width: 23rem;
     }
     .coming-soon-on button img {
         height: 3rem;
@@ -323,8 +323,8 @@ button {
         padding-left: 5rem;
     } 
     input{
-        font-size: 1.8rem;
-        width: 42rem;
+        font-size: 1.4rem;
+        width: 33rem;
     }
 }
 @media (max-width: 375px) {
