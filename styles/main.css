@@ -506,30 +506,6 @@ button:hover {
   padding: 0.5rem;
 }
 
-@-webkit-keyframes opaciti-letter {
-  0% {
-    width: 0%;
-  }
-  50% {
-    width: 100%;
-  }
-  100% {
-    width: 0%;
-  }
-}
-
-@keyframes opaciti-letter {
-  0% {
-    width: 0%;
-  }
-  50% {
-    width: 100%;
-  }
-  100% {
-    width: 0%;
-  }
-}
-
 @media (max-width: 1440px) {
   html {
     font-size: 12px;
