@@ -31,6 +31,25 @@ h4{
     color: $buttonH4;
     margin: 0; 
  }
+ h5{
+    @include saudagarNormal(400, 17.18rem);
+    @include centerUpper(19rem);
+    display: flex;
+    width: 47.87rem;
+    margin-top: 12rem;
+    margin-bottom: 0;
+    position: relative;
+    color: $textColorH5;
+    &::before {
+        content: "salon";
+        position: absolute;
+        color:$textColor;
+        animation-name: opaciti-letter;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        overflow: hidden;
+    }
+}
 p {
     @include sukhumvitNormal (500,1.1rem);
     margin: 0;
@@ -87,10 +106,9 @@ input{
     }
 }
 .center {
-    @include saudagarNormal(400, 17.18rem);
-    @include centerUpper(19rem);
-    margin-top: 12rem;
+    @include flexCenterJustify(center);
 }
+  
 .center-small {
     @include saudagarNormal(300, 2rem);
     @include centerUpper(2.62rem);
@@ -234,6 +252,30 @@ button {
         padding: 0.5rem;
     }
 }
+        // ---ANIMATION---
+@keyframes opaciti-letter {
+0% {
+    width: 0%;
+}
+50% {
+    width: 100%;
+}
+100% {
+    width: 0%;
+}
+}
+// @keyframes move-left {
+//     0% {
+//         width: 0%;
+//     }
+//     50% {
+//         width: 100%;
+//     }
+//     100% {
+//         width: 0%;
+//     }
+//     }
+            // ---RESPONSIVE---
 @media (max-width: 1440px) {
     html {
       font-size: 12px;
