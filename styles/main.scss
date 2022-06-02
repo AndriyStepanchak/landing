@@ -145,7 +145,6 @@ button {
    }
 }
 .own-shedule,.lashes,.skills-sharper-03 {
-    padding-left: 13rem; 
     h2 {
         @include widthHeightAlign(24.37rem,8.12rem,start);
         margin: 0;
@@ -157,22 +156,25 @@ button {
 .shedule {
     background: white;
     height: 97rem;
-    @include flexCenterJustify (center);
+    @include flexCenterJustify (space-around);
     padding-top: 13.12rem;
     img {
         @include widthHeightAlign(40.62rem,20.62rem,center);
     }
+    .own-shedule{
+        transition-duration: 1s;
+        &:hover {
+            margin-right: 10rem;
+        }
+    }
 }
 .good-money{
     height: 59.37rem;
-    @include flexCenterJustify (center);
+    @include flexCenterJustify (space-around);
     color: white;
-    .lashes {
-        padding-right: 18rem;
         h3 {
             color: $textH3White;
         }  
-        }
         img {
             @include widthHeightAlign(36.25rem,64.37rem,center);
             position: relative;
@@ -185,8 +187,8 @@ button {
 }
 .skills-sharper-03 {
     display: flex;
-    justify-content: space-between;
-    padding:13rem;
+    justify-content: space-around;
+    padding:13rem 0;
     text-align: start;
 }
 .ellipse {
@@ -235,7 +237,7 @@ button {
     }
 }
 .subscribe {
-    padding-left: 12.5rem;
+    padding-left: 8rem;
     button {
         width: 35rem;
         margin-top: 2rem;
@@ -265,26 +267,64 @@ button {
 }
 }
             // ---RESPONSIVE---
+@media (max-width: 1820px) {
+    h1 {
+        @include sizeLheight(17rem,17rem);
+    }
+} 
+@media (max-width: 1600px) {
+    h1 {
+        @include sizeLheight(16rem,16rem);
+    }
+}
+@media (max-width: 1680px) {
+    html {
+        font-size: 15px;
+    }
+}
+@media (max-width: 1520px) {
+    html {
+        font-size: 14px;
+    }
+}
 @media (max-width: 1440px) {
     html {
-      font-size: 12px;
+      font-size: 13px;
     }
   }
-  @media (max-width: 1024px) {
+@media (max-width: 1320px) {
+    html {
+        font-size: 12px;
+    }
+    .ellipse-34, .ellipse-35 {
+        width: 30rem;
+    }
+}
+@media (max-width: 1180px) {
+    html {
+      font-size: 11px;
+    }
+  }
+@media (max-width: 1100px) {
+    html {
+      font-size: 10px;
+    }
+  } 
+@media (max-width: 980px) {
     html {
       font-size: 9px;
     }
-  } 
-  @media (max-width: 768px) {
+  }
+@media (max-width: 890px) {
     html {
-      font-size: 6.8px;
+      font-size: 8px;
     }
   } 
-  @media (max-width: 425px) {
+@media (max-width: 800px) {
     html {
-        font-size: 5px;
+      font-size: 7.5px;
     }
-    .menu {
+        .menu {
         align-items:start;
     }
     .right-side, .left-side {
@@ -303,7 +343,7 @@ button {
         @include widthHeightAlign(30rem,7rem,center);
     }
     h1 {
-        @include sizeLheight(12rem,12rem);
+        @include sizeLheight(15rem,15rem);
     }
     h2,.coming-soon-on h2 {
         @include sizeLheight(3rem,5rem);
@@ -315,83 +355,68 @@ button {
         @include sizeLheight(3rem,3rem);
      }
      .coming {
+         height: 90rem;
         h3{
-            @include widthHeightAlign(75rem,15rem,center);
+            @include widthHeightAlign(85rem,12rem,center);
         }
        img {
-        width: 70rem;
+        width: 80rem;
        } 
      }
-     .shedule {
-        flex-direction: column-reverse;
-        .own-shedule {
-            width: 60rem;
-            padding-bottom: 5rem;
-            h4,h2,h3 {
-                margin: 0;
-                width: 60rem;
-            }
-        }
-    }
     .good-money .lashes,.skills-sharper-03  {
         padding: 4rem;
-        margin-bottom: 10rem; 
+        margin-bottom: 15rem; 
     }
     .ellipse-34, .ellipse-35 {
-        width: 23rem;
+        width: 27rem;
     }
     .coming-soon-on button img {
         height: 3rem;
     }
     .makeup img {
-        @include widthHeightAlign(38rem,38rem,center);
+        @include widthHeightAlign(50rem,50rem,center);
     }
-
     .copyright img {
         @include widthHeightAlign(3rem,3rem,baseline);
     }
     .subscribe {
         padding-left: 5rem;
+        button {
+            width: 38rem;
+        }
     } 
     input{
-        font-size: 1.4rem;
-        width: 33rem;
+        font-size: 1.7rem;
+        width: 38rem;
+    }
+  }
+@media (max-width: 700px) {
+    html {
+        font-size: 6px;
     }
 }
-@media (max-width: 375px) {
-    h1 {
-        @include sizeLheight(12rem,12rem);
+@media (max-width: 560px) {
+    html {
+        font-size: 5px;
     }
-    .ellipse-34, .ellipse-35 {
-        width: 22rem;
-    }
-    .subscribe {
-        padding-left: 3rem;
-    } 
-    input{
-        font-size: 1.6rem;
-        width: 33rem;
-    }
-} 
-@media (max-width: 320px) {
+}
+@media (max-width: 470px) {
     html {
         font-size: 4px;
     }
-    h1 {
-        @include sizeLheight(11rem,11rem);
+}
+@media (max-width: 380px) {
+    html {
+        font-size: 3.5px;
     }
-    .good-money .lashes,.skills-sharper-03  {
-        padding: 1rem;
+}
+@media (max-width: 340px) {
+    html {
+        font-size: 3px;
     }
-    .ellipse-34, .ellipse-35 {
-        width: 20rem;
+}
+@media (max-width: 295px) {
+    html {
+        font-size: 2.5px;
     }
-    .subscribe {
-        padding-left: 3rem;
-    } 
-    input{
-        font-size: 1.4rem;
-        width: 30rem;
-    }
-
 }
